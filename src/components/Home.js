@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand, Nav } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand='lg' collapseOnSelect>
+    <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
       <NavbarBrand>Login Page</NavbarBrand>
       <Navbar.Toggle />
       <Navbar.Collapse>

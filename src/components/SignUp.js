@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Login.module.css";
 
 const SignUp = () => {
-
-
   const {
     value: enteredFirstName,
     isValid: enteredFirstNameIsValid,
@@ -81,7 +79,9 @@ const SignUp = () => {
   return (
     <Container>
       <Card className="mt-5 p-4">
-      <p><h2>Signup Form</h2></p>
+        <p>
+          <h2>Signup Form</h2>
+        </p>
         <Form onSubmit={formSubmitHandler} noValidate validated={formIsValid}>
           <Form.Group hasValidation>
             <Form.Label>Email</Form.Label>

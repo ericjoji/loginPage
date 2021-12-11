@@ -2,13 +2,11 @@ import React from "react";
 
 import useInput from "../hooks/use-input";
 
-import { Button, Card, Form, Container} from "react-bootstrap";
+import { Button, Card, Form, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Login.module.css";
 
 const LoginForm = () => {
-
-
   // const {
   //   value: enteredFirstName,
   //   isValid: enteredFirstNameIsValid,
@@ -81,7 +79,9 @@ const LoginForm = () => {
   return (
     <Container>
       <Card className="mt-5 p-4">
-        <p><h2>Login</h2></p>
+        <p>
+          <h2>Login page</h2>
+        </p>
         <Form onSubmit={formSubmitHandler} noValidate validated={formIsValid}>
           <Form.Group hasValidation>
             <Form.Label>Email</Form.Label>

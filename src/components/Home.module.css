@@ -1,0 +1,10 @@
+.none {
+    text-decoration: none;
+    color: white;
+}
+.none:hover {
+    color: yellow;
+}
+.none:active {
+    color: green;
+}

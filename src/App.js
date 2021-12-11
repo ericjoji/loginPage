@@ -1,17 +1,17 @@
 import React, { Fragment } from "react";
 import Home from "./components/Home";
-import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   return (
     <Fragment>
-      <Router>
-        <Home />
-        <Login />
-        <SignUp />
-      </Router>
+      <Home />
+      <Routes>
+        <Route path="/LoginForm" element={<LoginForm />} />
+        <Route path="/SignUp" element={<SignUp />} />
+      </Routes>
     </Fragment>
   );
 }

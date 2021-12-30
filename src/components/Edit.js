@@ -6,7 +6,7 @@ import { Button, Card, Form, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Login.module.css";
 
-const SignUp = () => {
+const Edit = () => {
   const {
     value: enteredFirstName,
     isValid: enteredFirstNameIsValid,
@@ -67,11 +67,13 @@ const SignUp = () => {
       enteredEmail,
       enteredPassword
     );
-    resetFirstNameInput();
-    resetLastNameInput();
-    resetEmailInput();
-    resetPasswordInput();
+    
   };
+
+  let firstName = localStorage.getItem("firstName");
+  let lastName = localStorage.getItem("lastName");
+  let email = localStorage.getItem("email");
+  let password = localStorage.getItem("password");
 
   let ifErrorFirstName = FirstNameInputHasError && classes.lightred;
 
@@ -168,4 +170,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Edit;
